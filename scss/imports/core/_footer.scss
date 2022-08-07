@@ -1,0 +1,173 @@
+// css footer
+footer {
+  width: 100%;
+  height: 400px;
+  background: $main-bg-cl;
+  padding-bottom: 120px;
+  .container {
+    display: flex;
+    height: 100%;
+    .leftfooter {
+      height: 100%;
+      width: 60%;
+      position: relative;
+      &__text {
+        padding-top: 24px;
+        max-width: 300px;
+        @include text(18px, GL, normal, $white-cl, normal);
+        font-weight: bold;
+        line-height: 32px;
+      }
+      &__minitext {
+        position: absolute;
+        bottom: 0;
+        @include text(18px, GL, normal, $white-cl, normal);
+        opacity: 0.5;
+      }
+    }
+    .menuright {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      .blog {
+        padding-bottom: 24px;
+        line-height: 32px;
+        @include text(24px, GL, normal, $text-cl, normal);
+        font-weight: bold;
+      }
+      .menufooter {
+        li {
+          padding-bottom: 16px;
+          a {
+            @include text(18px, GL, normal, $white-cl, normal);
+            line-height: 32px;
+            // cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include sm {
+  footer {
+    height: 700px;
+    padding-bottom: 100px;
+    .container {
+      flex-direction: column-reverse;
+      .leftfooter {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &__text {
+          text-align: center;
+        }
+      }
+      .menuright {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+@include xs {
+  footer {
+    height: 550px;
+    padding-bottom: 80px;
+    .container {
+      .leftfooter {
+        &__text {
+          padding-top: 20px;
+          font-size: 16px;
+        }
+        &__minitext {
+          font-size: 16px;
+        }
+      }
+      .menuright {
+        .blog {
+          padding-bottom: 20px;
+          font-size: 20px;
+        }
+        .menufooter {
+          li {
+            padding-bottom: 14px;
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include xxs {
+  footer {
+    height: 450px;
+    padding-bottom: 50px;
+    .container {
+      .leftfooter {
+        &__text {
+          padding-top: 10px;
+          font-size: 14px;
+        }
+        &__minitext {
+          font-size: 14px;
+        }
+      }
+      .menuright {
+        .blog {
+          padding-bottom: 10px;
+          font-size: 18px;
+        }
+        .menufooter {
+          li {
+            padding-bottom: 12px;
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+  footer {
+    height: 550px;
+    .container {
+      .leftfooter {
+        &__text {
+          font-size: 13px;
+        }
+        &__minitext {
+          font-size: 13px;
+        }
+      }
+      .menuright {
+        flex-direction: column;
+        .blog {
+          font-size: 16px;
+        }
+        .rightfooter,
+        .centerfooter {
+          text-align: center;
+        }
+        .rightfooter {
+          margin-top: 20px;
+        }
+        .menufooter {
+          li {
+            padding: 0;
+            a {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Project Name</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css">
+    <link rel="stylesheet" href="dest/fonts.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="loading">
+        <div class="loading__title">
+            <img src="img/Logo.svg" alt="logo-mntn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <header>
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="img/Logo.svg" alt="logo-mntn">
+            </div>
+            <ul class="menu">
+                <li><a href="">Equipment</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+            <div class="account">
+                <img src="img/account.svg" alt="account">
+                Account
+            </div>
+            <div class="btn-menu" onclick="showNavMenu()">
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="">Equipment</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Blog</a></li>
+        </ul>
+    </nav>
+    <main class="mainwrapper homepage">
+        <section class="slider">
+            <div class="slider__img">
+                <div class="slider-item is-selected">
+                    <img class="slider__img-image" src="img/slider.jpg" alt="slider">
+                    <div class="slider__img-title">
+                        <p>A Hiking guide</p>
+                        <h2>Be prepared for the Mountains and beyond!</h2>
+                        <div class="icon-scroll">
+                            scroll down
+                            <img class="icon-scroll-down" src="img/down-arrow.svg" alt="icon-down-arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img class="slider__img-image" src="img/slider2.jpg" alt="slider">
+                    <div class="slider__img-title">
+                        <p>A Hiking guide 2</p>
+                        <h2>Be prepared for the Mountains and beyond!</h2>
+                        <div class="icon-scroll">
+                            scroll down
+                            <img class="icon-scroll-down" src="img/down-arrow.svg" alt="icon-down-arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img class="slider__img-image" src="img/slider3.jpg" alt="slider">
+                    <div class="slider__img-title">
+                        <p>A Hiking guide 3</p>
+                        <h2>Be prepared for the Mountains and beyond!</h2>
+                        <div class="icon-scroll">
+                            scroll down
+                            <img class="icon-scroll-down" src="img/down-arrow.svg" alt="icon-down-arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img class="slider__img-image" src="img/slider4.jpg" alt="slider">
+                    <div class="slider__img-title">
+                        <p>A Hiking guide 4</p>
+                        <h2>Be prepared for the Mountains and beyond!</h2>
+                        <div class="icon-scroll">
+                            scroll down
+                            <img class="icon-scroll-down" src="img/down-arrow.svg" alt="icon-down-arrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__text">
+                <div class="container-fluid">
+                    <div class="slider__text-contact">
+                        <p>Follow us</p>
+                        <img src="img/instagram.svg" alt="instagram">
+                        <img src="img/twitter.svg" alt="twitter">
+                    </div>
+                    <div class="slider__text-control">
+                        <div class="number">
+                            <p>Start</p>
+                            <p>01</p>
+                            <p>02</p>
+                            <p>03</p>
+                        </div>
+                        <div class="doted"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content one">
+            <div class="container" data-aos-offset="100" data-aos-delay="50" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+                <div class="content__text">
+                    <div class="number">01</div>
+                    <p class="small-title">get started</p>
+                    <h3>What level of hiker are you</h3>
+                    <p class="content__text-paragraph">
+                        Determining what level of hiker you are can be an important 
+                        tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? 
+                    </p>
+                    <a class="btn-read-more">
+                        read more
+                        <img src="img/right-arrow.svg" alt="icon-right">
+                    </a>
+                </div>
+                <div class="content__img">
+                    <img src="img/mntn_content_1.jpg" alt="content-1">
+                </div>
+            </div>
+        </section>
+        <section class="content two">
+            <div class="container" data-aos-offset="100" data-aos-delay="50" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+                <div class="content__text">
+                    <div class="number">02</div>
+                    <p class="small-title">Hiking Essentials</p>
+                    <h3>Picking the right Hiking Gear!</h3>
+                    <p class="content__text-paragraph">
+                        The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
+                        Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet. 
+                    </p>
+                    <a class="btn-read-more">
+                        read more
+                        <img src="img/right-arrow.svg" alt="icon-right">
+                    </a>
+                </div>
+                <div class="content__img">
+                    <img src="img/mntn_content_2.jpg" alt="content-1">
+                </div>
+            </div>
+        </section>
+        <section class="content three">
+            <div class="container" data-aos-offset="100" data-aos-delay="50"  data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+                <div class="content__text">
+                    <div class="number">03</div>
+                    <p class="small-title">where you go is the key</p>
+                    <h3>Understand Your Map & Timing</h3>
+                    <p class="content__text-paragraph">
+                        Determining what level of hiker you are can be an important 
+                        tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? 
+                    </p>
+                    <a class="btn-read-more">
+                        read more
+                        <img src="img/right-arrow.svg" alt="icon-right">
+                    </a>
+                </div>
+                <div class="content__img">
+                    <img src="img/mntn_content3.jpg" alt="content-1">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="leftfooter">
+                <div class="leftfooter__logo">
+                    <img src="img/Logo.svg" alt="logo"/>
+                </div>
+                <div class="leftfooter__text">
+                    Get out there & discover your next slope, mountain & destination!
+                </div>
+                <div class="leftfooter__minitext">
+                    Copyright 2019 MNTN, Inc. Terms & Privacy
+                </div>
+            </div>
+            <div class="menuright">
+                <div class="centerfooter">
+                    <div class="centerfooter__title blog">More on The Blog</div>
+                    <ul class="centerfooter__menu menufooter">
+                        <li><a>About MNTN</a></li>
+                        <li><a>Contributors & Writers</a></li>
+                        <li><a>Write For Us</a></li>
+                        <li><a>Contact Us</a></li>
+                        <li style="padding-bottom: 0;"><a>Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="rightfooter">
+                    <div class="rightfooter__title blog">More on The MNTN</div>
+                    <ul class="rightfooter__menu menufooter">
+                        <li><a>The Team</a></li>
+                        <li><a>Jobs</a></li>
+                        <li><a>Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="toTop">
+        <img src="img/upwards-arrow.svg" alt="back-top-top" />
+    </div>
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+
+
+</body>
+
+</html>
